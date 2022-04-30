@@ -6,17 +6,23 @@ import java.util.List;
 public class BuildOptions {
 	private BuildOptions() {}
 	
+	
 	private static FileType preFormattedFileType = FileType.MARKDOWN;
 	private static FileType formattedFileType = FileType.HTML;
 	
 	private static String inDir = "C:\\Users\\James\\Desktop\\Website\\james-mck.github.io\\";
 	private static String outDir = "C:\\Users\\James\\Desktop\\Website\\james-mck.github.io\\";
 	
+	// List of files to ignore
+	// Note: Currently only very basic pattern matching, eg will ignore all files/folders containing `.git`
 	private static List<String> ignoredFiles = Arrays.asList(
 			".git");
 	
+	// The line used to mark the boundry between information about the post and the post itself
 	private static String postStartSeperator = "-----";
 
+	// Getters for everything in this class
+	
 	public static FileType getPreFormattedFileType() {
 		return preFormattedFileType;
 	}
