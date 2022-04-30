@@ -6,7 +6,6 @@ import java.util.List;
 public class BuildOptions {
 	private BuildOptions() {}
 	
-	
 	private static FileType preFormattedFileType = FileType.MARKDOWN;
 	private static FileType formattedFileType = FileType.HTML;
 	
