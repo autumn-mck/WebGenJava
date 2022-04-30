@@ -8,6 +8,7 @@ import java.time.LocalDateTime;
 import java.time.format.TextStyle;
 
 public class WebGenConsole {
+	// ArrayList for keeping track of all posts
 	private static ArrayList<Post> allPosts = new ArrayList<>();
 
 	public static void main(String[] args) {
